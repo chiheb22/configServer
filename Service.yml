@@ -1,3 +1,14 @@
 message : 3adi
 server : 
   port : 5999
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9102/eureka/
+  instance:
+	prefer-ip-address:true
