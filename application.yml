@@ -3,12 +3,13 @@ spring:
     admin:
       client:
         url: http://localhost:9001
+	instance
+	  prefer-ip:true
 management:
   endpoints:
     web:
       exposure:
         include: '*'
-  
-eureka:
-  instance:
-    hostname: localhost
+  endpoint:
+      health:
+	show-details:'always'

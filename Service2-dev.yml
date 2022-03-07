@@ -1,6 +1,6 @@
-message : normal
+message : dev
 server : 
-  port : 6075
+  port : 4000
 management:
   endpoints:
     web:
@@ -10,6 +10,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:9102/eureka/
-
-
   
+
