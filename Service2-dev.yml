@@ -1,17 +1,5 @@
 message : dev
 server : 
   port : 4000
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:9102/eureka/
-  instance:
-	prefer-ip-address:true
 
-  
 
